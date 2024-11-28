@@ -27,5 +27,10 @@
   "dependencies": {
     "@typescript-eslint/utils": "^8.15.0",
     "debug": "^4.3.7"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "repository": "https://github.com/galargh/eslint-plugin-immutable-readonly.git"
 }
