@@ -1,0 +1,31 @@
+{
+  "name": "@galargh/eslint-plugin-immutable-readonly",
+  "version": "1.0.0",
+  "description": "An ESLint plugin to enforce immutability of readonly properties.",
+  "main": "dist/src/index.js",
+  "files": [
+    "dist/src/",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "pnpm prettier --check",
+    "lint:fix": "pnpm prettier --write",
+    "prettier": "prettier \"src/**/*.ts\" \"test/**/*.ts\"",
+    "build": "tsc --build .",
+    "clean": "rimraf dist",
+    "test": "node --import tsx --test \"test/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/node": "^22.9.3",
+    "@typescript-eslint/parser": "^8.15.0",
+    "@typescript-eslint/rule-tester": "^8.15.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "^8.15.0",
+    "debug": "^4.3.7"
+  }
+}
